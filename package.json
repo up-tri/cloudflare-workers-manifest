@@ -1,0 +1,34 @@
+{
+  "name": "cloudflare-workers-manifest-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "author": {
+    "name": "up-tri",
+    "email": "yaki-shake@up-tri.me"
+  },
+  "license": "MIT",
+  "scripts": {
+    "generate": "./bin/generate",
+    "deploy": "./bin/deploy"
+  },
+  "engines": {
+    "npm": "please_use_yarn_instead"
+  },
+  "workspaces": {
+    "packages": [
+      "manifests/*"
+    ]
+  },
+  "devDependencies": {
+    "@iarna/toml": "^2.2.5",
+    "arg": "^5.0.1",
+    "chalk": "4.1.2",
+    "dayjs": "^1.11.0",
+    "eslint": "^8.13.0",
+    "esm": "^3.2.25"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
